@@ -48,6 +48,93 @@ nav{
     display: none;
 }
 
+/* banner related styles */
+.banner{
+    background-image: url(./assets/hero-bg.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 100px 0;
+}
+
+.banner-container{
+    max-width: 576px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 22px;
+}
+
+.banner-image{
+    background-image: url(./assets/hero-circle.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 350px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.new{
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 30px;
+    background-color: #00FF88;
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+.banner-texts h2{
+    font-size: 3.8rem;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.banner-texts p{
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.banner-buttons{
+    display: flex;
+    gap: 20px;
+}
+
+.banner-btn-1{
+    padding: 12px 20px;
+    background: linear-gradient(45deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1));
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.banner-btn-2{
+    padding: 11px 20px;
+    border-radius: 20px;
+    font-size: 1rem;
+    border: 1px solid  #00FF88;
+    background-color: transparent;
+    color: #00FF88;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
 @media screen and (max-width:576px){
     /* nav  */
     .menu, .nav-btn{
@@ -58,5 +145,29 @@ nav{
     }
     .logo-name{
         font-size: 1.5rem;
+    }
+    /* banner */
+    .banner{
+        padding: 35px 1rem;
+    }
+    .banner-image{
+        width: 200px;
+        height: 200px;
+    }
+
+    .banner-image img{
+        width: 40%;
+    }
+    .banner-texts h2{
+        font-size: 2.4rem;
+    }
+    .banner-btn-1, .banner-btn-2{
+        padding: 8px 12px;
+    }
+    .banner-buttons{
+        gap: 8px;
+    }
+    .new{
+        right: 10px;
     }
 }
