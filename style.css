@@ -309,6 +309,56 @@ nav{
 
 }
 
+/* host section */
+.host{
+    padding-bottom: 120px;
+    background-color: #1A0B2E;
+    color: white;
+}
+
+.host-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.host-header{
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
+
+.host-details{
+    display: flex;
+    padding: 40px;
+    gap: 24px;
+    align-items: center;
+    background-color: #230E3D;
+    border-radius: 40px;
+}
+
+.host-social-app{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid rgba(83, 60, 114, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.host-texts p{
+    color: rgb(201, 202, 204);;
+    margin-top: 1rem;
+}
+
+.host-socials{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 1rem;
+}
+
 @media screen and (max-width:576px){
     /* nav  */
     .menu, .nav-btn{
@@ -408,5 +458,23 @@ nav{
     }
     .featured-video iframe{
         width: 100%;
+    }
+
+    /* host section */
+    .host-details{
+        width: 100%;
+        flex-direction: column;
+    }
+    .host-texts{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align:center;
+    }
+    .host{
+        padding-bottom: 50px;
+    }
+    .host-header{
+        font-size: 1.8rem;
     }
 }
