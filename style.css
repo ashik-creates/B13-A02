@@ -53,11 +53,11 @@ nav{
     background-image: url(./assets/hero-bg.png);
     background-repeat: no-repeat;
     background-size:cover;
-    background-position: center;
+    background-size: 100% 100%;
     color: white;
     display: flex;
     justify-content: center;
-    padding: 100px 0;
+    padding: 100px 1rem;
 }
 
 .banner-container{
@@ -135,6 +135,54 @@ nav{
     gap: 6px;
 }
 
+/* about section */
+.about{
+    background-color: #1A0B2E;
+    color: white;
+    padding: 4rem 0;
+}
+
+.about-container{
+    max-width: 1200px;
+    min-height: 50%;
+    padding: 0 1rem;
+    margin: 0 auto;
+}
+
+.about-texts{
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+}
+
+.about-texts h2{
+    font-size: 3rem;
+}
+
+.about-texts p{
+    font-size: 1rem;
+}
+
+.about-container hr{
+    border: 0.1px solid rgb(61, 59, 59);
+    margin: 5rem 0;
+}
+
+.about-cards{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    text-align: center;
+}
+
+.about-card h2{
+    color: #00FF88;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+}
+
 @media screen and (max-width:576px){
     /* nav  */
     .menu, .nav-btn{
@@ -148,7 +196,8 @@ nav{
     }
     /* banner */
     .banner{
-        padding: 35px 1rem;
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
     .banner-image{
         width: 200px;
@@ -169,5 +218,16 @@ nav{
     }
     .new{
         right: 10px;
+    }
+    /* about */
+    .about-cards{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .about-texts h2{
+        font-size: 2rem;
+    }
+    .about-card h2{
+        font-size: 2.5rem;
     }
 }
