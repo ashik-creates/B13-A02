@@ -104,6 +104,7 @@ nav{
     font-size: 1rem;
     line-height: 1.6;
     margin-bottom: 10px;
+    color: rgb(201, 202, 204);
 }
 
 .banner-buttons{
@@ -164,6 +165,7 @@ nav{
 
 .about-texts p{
     font-size: 1rem;
+    color: rgb(201, 202, 204);
 }
 
 .about-container hr{
@@ -182,6 +184,69 @@ nav{
     color: #00FF88;
     margin-bottom: 1rem;
     font-size: 3rem;
+}
+
+.about-card p{
+    color: rgb(201, 202, 204);
+}
+
+/* why choose */
+.why-choose{
+    padding: 120px 0;
+    background-color: #230E3D;
+    color: white;
+}
+
+.choose-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.grid-box{
+    padding: 40px;
+    border-radius: 40px;
+    background-color: rgba(53, 17, 101, 0.4);;
+    display: grid;
+    align-content: center;
+    gap: 1rem;
+}
+
+.grid-box h3{
+    font-size: 1.5rem;
+}
+.grid-box p{
+    color: rgb(201, 202, 204);;
+}
+
+.choose-header{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.choose-grid-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 30px;
+}
+
+.grid-box-1{
+    grid-row: span 2;
+}
+
+.grid-box-2{
+    grid-column: span 2;
+}
+
+.grid-box-3{
+    grid-column: span 2;
+}
+.grid-box-4{
+    grid-column: span 2;
 }
 
 @media screen and (max-width:576px){
@@ -221,6 +286,10 @@ nav{
         right: 10px;
     }
     /* about */
+    .about{
+        padding: 2rem 0;
+    }
+    
     .about-cards{
         grid-template-columns: repeat(2,1fr);
     }
@@ -233,5 +302,29 @@ nav{
     }
     .about-container hr{
         margin: 3rem 0;
+    }
+
+    /* why choose */
+    .choose-grid-container{
+        grid-template-columns: 1fr;
+    }
+
+    .grid-box-1, 
+    .grid-box-2,
+    .grid-box-3,
+    .grid-box-4{
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .grid-box{
+        padding: 24px;
+    }
+    .choose-header{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .why-choose{
+        padding: 40px 0;
     }
 }
