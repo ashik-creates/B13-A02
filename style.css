@@ -515,6 +515,9 @@ footer {
         font-size: 1.8rem;
     }
     /* footer */
+    footer{
+        padding: 50px 0;
+    }
     .footer-logo{
         max-width: 200px;
     }
