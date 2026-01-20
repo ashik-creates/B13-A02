@@ -206,7 +206,7 @@ nav{
 .grid-box{
     padding: 40px;
     border-radius: 40px;
-    background-color: rgba(53, 17, 101, 0.4);;
+    background-color: rgba(53, 17, 101, 0.4);
     display: grid;
     align-content: center;
     gap: 1rem;
@@ -216,7 +216,7 @@ nav{
     font-size: 1.5rem;
 }
 .grid-box p{
-    color: rgb(201, 202, 204);;
+    color: rgb(201, 202, 204);
 }
 
 .choose-header{
@@ -268,7 +268,7 @@ nav{
 }
 
 .featured-card{
-    max-width: 370px;
+    flex: 1;
     border-radius: 40px;
     background-color: #230E3D;
 }
@@ -299,7 +299,7 @@ nav{
 }
 
 .featured-texts p{
-    color: rgb(201, 202, 204);;
+    color: rgb(201, 202, 204);
 }
 
 .featured-video iframe{
@@ -348,7 +348,7 @@ nav{
 }
 
 .host-texts p{
-    color: rgb(201, 202, 204);;
+    color: rgb(201, 202, 204);
     margin-top: 1rem;
 }
 
@@ -357,6 +357,43 @@ nav{
     align-items: center;
     gap: 10px;
     margin-top: 1rem;
+}
+
+/* footer section */
+footer {
+    background-image: url(./assets/footer-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 120px 1rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-social, .rights {
+    color: rgb(201, 202, 204);
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-social-links{
+    display: flex;
+    gap: 2rem;
+}
+
+.footer-social{
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 @media screen and (max-width:576px){
@@ -411,9 +448,7 @@ nav{
     .about-texts h2{
         font-size: 2rem;
     }
-    .about-card h2{
-        font-size: 2.5rem;
-    }
+
     .about-container hr{
         margin: 3rem 0;
     }
@@ -435,7 +470,7 @@ nav{
         padding: 24px;
     }
     .choose-header{
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         text-align: center;
     }
     .why-choose{
@@ -476,5 +511,16 @@ nav{
     }
     .host-header{
         font-size: 1.8rem;
+    }
+    /* footer */
+    .footer-logo{
+        max-width: 200px;
+    }
+    .footer-logo img{
+        width: 100%;
+    }
+    .footer-social-links{
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
