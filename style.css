@@ -54,7 +54,7 @@ nav{
     background-image: url(./assets/hero-bg.png);
     background-repeat: no-repeat;
     background-size:cover;
-    background-size: 100% 100%;
+    background-position: center;
     color: white;
     display: flex;
     justify-content: center;
@@ -425,12 +425,12 @@ footer {
     }
 
     .banner{
-        padding-top: 50px;
-        padding-bottom: 50px;
+        background-image: url(./assets/mobile-bn-bg.png) ;
+        padding: 50px 1rem;
     }
     .banner-image{
-        width: 195px;
-        height: 195px;
+        width: 190px;
+        height: 190px;
     }
 
     .banner-image img{
@@ -532,8 +532,8 @@ footer {
     }
     /* footer */
     footer{
+        background-image: url(./assets/mobile-ft-bg.png);
         padding: 50px 1rem;
-        background-size: 100% 100%;
     }
     .footer-logo{
         max-width: 200px;
@@ -544,5 +544,11 @@ footer {
     .footer-social-links{
         flex-wrap: wrap;
         justify-content: center;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:992px){
+    .featured-cards{
+        flex-direction: column;
     }
 }
